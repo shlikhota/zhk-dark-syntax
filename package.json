@@ -1,0 +1,16 @@
+{
+  "name": "zhk-dark-syntax",
+  "theme": "syntax",
+  "version": "0.1.0",
+  "description": "Dark theme with colorful chars",
+  "keywords": [
+    "dark",
+    "syntax",
+    "theme"
+  ],
+  "repository": "https://github.com/shlikhota/zhk-dark-syntax",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}
