@@ -1,0 +1,27 @@
+// Scss example
+@import "base";
+
+%rounded-button {
+  border-radius: 4px;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 0 auto;
+  width: 800px;
+
+  &-header {
+    background: img("assets/logo.png") 0 0 no-repeat;
+  }
+}
+
+.main-button {
+  @extend %rounded-button;
+  min-width: 100px;
+  background-color: green;
+  color: white;
+}
