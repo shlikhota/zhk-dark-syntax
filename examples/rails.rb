@@ -15,12 +15,11 @@ class User < ActiveRecord::Base
 
   has_one :user_activity
 
-  def new_method; end
-
   def activated?
     activated_at.present?
   end
+
   def online?
-    user_activity && user_activity.updated_at >= ONLINE_PERIOD.ago # changed
+    user_activity && user_activity.updated_at >= ONLINE_PERIOD.ago
   end
 end
