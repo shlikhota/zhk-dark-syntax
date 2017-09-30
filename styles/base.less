@@ -71,29 +71,32 @@ atom-text-editor .search-results .syntax--marker.current-result .region {
 
 atom-text-editor .gutter .line-number.git-line-added {
   background-color: @git-added-backgroud-color;
-  box-shadow: inset 4px 0 0 @git-added-color;
+  box-shadow: inset 2px 0 0 @git-added-color;
 }
 
 atom-text-editor .gutter.git-diff-icon .line-number.git-line-added:before {
   color: @git-added-color;
   top: 0;
-  left: 0.15em;
+  left: 0.4em;
+  position: absolute;
 }
 
 atom-text-editor .gutter .line-number.git-line-modified {
   background-color: @git-modified-background-color;
-  box-shadow: inset 4px 0 0 @orange;
+  box-shadow: inset 2px 0 0 @orange;
 }
 
 atom-text-editor .gutter.git-diff-icon .line-number.git-line-modified:before {
   top: 0;
-  left: 0.15em;
+  left: 0.4em;
+  position: absolute;
 }
 
 atom-text-editor .gutter.git-diff-icon .line-number.git-line-removed:before {
   content: "";
   top: 0;
-  left: 0.15em;
+  left: 0.4em;
+  position: absolute;
 }
 
 atom-text-editor .gutter .line-number.git-line-removed:after {
@@ -102,8 +105,8 @@ atom-text-editor .gutter .line-number.git-line-removed:after {
   height: 0;
   width: 0;
   left: -0.05em;
-  top: -0.14em;
-  font-size: 2.5em;
+  top: -0.5em;
+  font-size: 2.1em;
   color: @git-removed-color;
   border: none;
 }
